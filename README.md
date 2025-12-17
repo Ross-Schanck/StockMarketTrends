@@ -5,41 +5,27 @@
 
 #### Project Overview
 
-This project explores whether machine learning models can identify short-term patters in historical stock
-price and trading volume data to predict **next-day market direction (Up or Down).** Using S&P 500 index
-data, we evaluate whether simple classification models can outperform random guessing and provide
-meaningful predicitive insight in highly financial data.
+This project explores whether machine learning models can identify short-term patters in historical stock price and trading volume data to predict **next-day market direction (Up or Down).** Using S&P 500 index data, we evaluate whether simple classification models can outperform random guessing and provide meaningful predictive insight in highly financial data.
 
-This repository contains a series of Jupyter notebooks corresponding to weekly project milestones, 
-which include EDA, pre-processing and feature engineering, Initial modeling, final modeling,
-tuning, and evaluation and Interpretation.a**
+This repository contains a series of Jupyter notebooks corresponding to weekly project milestones, which include exploratory data analysis (EDA), data pre-processing and feature engineering, initial modeling, model tuning, final evaluation, and interpretation. 
 
 #### Brief background
 
-The stock market is heavily influenced by many factors like a company’s performance, investor
-behavior and other economic conditions. Even though the market is unpredictable, traders rely
-on trends to make decisions on investments. We want to determine whether machine learning can
-identify short-term patterns to help predict if stock prices will increase or decrease the next 
-day based on recent treResearch nds.
+The stock market is heavily influenced by many factors like a company’s performance, investor behavior and other broader economic conditions. Even though the market is unpredictable, traders rely on trends to make decisions on investments. We want to determine whether machine learning can identify short-term patterns to help predict if stock prices will increase or decrease the next day based on recent trends.
 
 #### Question
 
-Can we predict next-day up and down movement of S&amp;P 500 stocks using historical price and trade volume data?
+Can we predict next-day upward or downward movement of the S&P 500 using historical price and trading volume data? 
 
 #### Hypothesis & Predictions
 
 ## **Hypothesis**:
 
-If recent stock trends and trading volumes show consistent patterns, then simple classification
-models like logistic regression or random forest can predict next-day stock movement more
-accurately than random guessing.
-
+If recent stock trends and trading volumes show consistent patterns, then simple classification models like logistic regression or random forest can predict next-day stock movement more accurately than random guessing.
 
 ## **Prediction**:
 
-We expect that our model will correctly predict stock direction 55-60% of the time. This is
-slightly better than chance but will prove that short-term patterns contain usable information. Our
-hope is that m the model’s overall accuracy.ore historic data will improve
+We expect that our model will correctly predict stock direction 55-60% of the time. This is slightly better than chance but will prove that short-term patterns contain usable information. Our hope is that the model’s overall accuracy from historic data will improve.
 
 ## Data Source
 - S&P 500 Historical data retrieved from Yahoo Finance via the yfinance API
@@ -49,6 +35,9 @@ hope is that m the model’s overall accuracy.ore historic data will improve
     - OHLC prices
     - Trading Volume
     - Date Index
+## Target Variable
+
+The target variable is a binary classification label indicating whether the next day’s adjusted closing price is higher (Up) or lower (Down) than the current day’s adjusted closing price.
 
 ## Project Structure
 
@@ -85,31 +74,30 @@ Usages examples are directly in each jupyter notebook.
 
 For the Model Evaluation & Interpretation and Model Evaluation& Interpretation(V2) we intentionally
 kept most evaluation and plotting inside the notebooks rather than offloading large portions into 
-separate .py files. This is done to:
-
+separate .py files. 
+This is done to:
 - Maximize Reproducibility
 - Preserve analysis - specifically making it easier to follow
 
 ## Reproducibility & Testing
 
-- All notebooks were run end-to-end locally without 
+- All notebooks were run end-to-end locally without errors
 
 ## Requirement Files
 
 - **requirements.txt**
 
     - A dependency list containing only core libraries required to run analysis and models
-      -> This is what most users will need.
+      -> This file is recommended for most users.
 
 - **requirements_full.txt**
 
-    - A complete enviornment snapshot generated via 'pip freeze.' Includes Jupyter and
-      development related dependencieserrors by the primary authors.
+    - A complete enviornment snapshot generated via 'pip freeze.' Includes Jupyter and development related dependencies by the primary authors.
 
 ## Authors & Contributions
 
-- Auriana Anderson - Data preparation, modeling, evaluation, documentation, Review, Testing, Feedback
+- Auriana Anderson - Data preparation, modeling, evaluation, documentation, Review, Testing, Feedback.
 
-- Ross Schanck - Data preparation, modeling, evaluation, documentation, Review, Testing, Feedback
+- Ross Schanck - Data preparation, modeling, evaluation, documentation, Review, Testing, Feedback.
 
-- Chase Golden - Data preparation, modeling, evaluation, documentation, Review, Testing, Feedback
+- Chase Golden - Data preparation, modeling, evaluation, documentation of the model’s overall accuracy.
